@@ -1,4 +1,5 @@
 import React from "react";
+import './News.css';
 
 class News extends React.Component {
     constructor(props) {
@@ -17,7 +18,7 @@ class News extends React.Component {
       let w = { width: "400px" };
       let arr = data.articles.map((p) => {
         return (
-          <div class="p-8">  
+          <div class="p-8" classname="news">  
           {/* <!--Card 1--> */}
           <div class="max-w-sm rounded overflow-hidden shadow-lg">
             <img class="w-full" src={p.urlToImage}/>
